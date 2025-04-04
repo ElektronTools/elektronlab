@@ -1,23 +1,31 @@
 // components/Navbar.js
+
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => setIsOpen(!isOpen);
 
+  useEffect(() => {
+    if (typeof window !== "undefined" && typeof bootstrap === "undefined") {
+      import("bootstrap/dist/js/bootstrap.bundle.min.js");
+    }
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container-fluid">
         <Link href="/" className="navbar-brand d-flex align-items-center text-white">
           <img
-            src="/elektronlogo.ico" // Asegúrate de que el archivo está en public/
+            src="/elektronlogo.ico"
             alt="Elektron Logo"
-            style={{ width: '50px', height: '50px', marginRight: '10px' }}
+            style={{ width: "50px", height: "50px", marginRight: "10px" }}
           />
           Elektron Lab
         </Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -28,16 +36,53 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav ms-auto justify-content-center w-100">
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle text-white"
+                href="#"
+                id="arduinoDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Arduino
+              </a>
+              <ul className="dropdown-menu bg-dark" aria-labelledby="arduinoDropdown">
+                <li>
+                  <Link href="/modulo1" className="dropdown-item text-white">
+                    Módulo 1: Introducción
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/modulo2" className="dropdown-item text-white">
+                    Módulo 2: Entradas Digitales
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/modulo3" className="dropdown-item text-white">
+                    Módulo 3: PWM y sensores
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
             <li className="nav-item">
-              <Link href="/laboratory" className="nav-link text-white">Laboratorios</Link>
+              <Link href="/laboratory" className="nav-link text-white">
+                Laboratorios
+              </Link>
             </li>
             <li className="nav-item">
-              <Link href="/programas" className="nav-link text-white">Descargas</Link>
+              <Link href="/programas" className="nav-link text-white">
+                Descargas
+              </Link>
             </li>
             <li className="nav-item">
-              <Link href="/about" className="nav-link text-white">¿Qué es Elektron Lab?</Link>
+              <Link href="/about" className="nav-link text-white">
+                ¿Qué es Elektron Lab?
+              </Link>
             </li>
           </ul>
         </div>

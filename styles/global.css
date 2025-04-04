@@ -1,0 +1,17 @@
+/* styles/global.css */
+
+/* Estilos para el footer */
+footer {
+    background-color: #343a40; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px 0; /* Espaciado */
+  }
+  
+  footer a {
+    color: white; /* Enlaces blancos */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón */
+  }
+  

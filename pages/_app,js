@@ -1,20 +1,17 @@
 // pages/_app.js
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importa Bootstrap
 import 'bootswatch/dist/Lux/bootstrap.min.css'; // Tema de Bootswatch
-import '../styles/global.css'; // Tus estilos globales
-import '../styles/Navbar.css'; // ✅ Agrega esta línea para incluir los estilos del navbar
+import '../styles/global.css'; // Si tienes estilos personalizados
 
-import { useEffect } from 'react';
+import Footer from '../components/Footer'; // Importa el footer
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    const bootstrapCSS = document.querySelector('link[href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"]');
-    if (bootstrapCSS) {
-      bootstrapCSS.remove();
-    }
-  }, []);
-
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Component {...pageProps} /> {/* Renderiza el contenido de cada página */}
+      <Footer /> {/* Renderiza el footer en todas las páginas */}
+    </>
+  );
 }
 
 export default MyApp;
