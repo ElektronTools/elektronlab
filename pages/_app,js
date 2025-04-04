@@ -1,12 +1,13 @@
 // pages/_app.js
-import 'bootstrap/dist/css/bootstrap.min.css'; // Importa Bootstrap directamente
-import 'bootswatch/dist/Lux/bootstrap.min.css'; // Importa el tema Minty de Bootswatch
-import '../styles/global.css'; // Si tienes estilos personalizados
+import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap
+import 'bootswatch/dist/Lux/bootstrap.min.css'; // Tema de Bootswatch
+import '../styles/global.css'; // Tus estilos globales
+import '../styles/Navbar.css'; // ✅ Agrega esta línea para incluir los estilos del navbar
+
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    // Evitar que se cargue el tema de Bootswatch en el cliente si ya se cargó
     const bootstrapCSS = document.querySelector('link[href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"]');
     if (bootstrapCSS) {
       bootstrapCSS.remove();
