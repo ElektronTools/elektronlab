@@ -1,0 +1,52 @@
+/* Estilos para el Footer */
+.social-icon {
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  color: #17a2b8 !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link {
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 0;
+}
+
+.footer-link:hover {
+  color: #17a2b8 !important;
+  padding-left: 5px;
+}
+
+.footer-link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #17a2b8;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover::before {
+  width: 100%;
+}
+
+/* Estilos para el input de newsletter */
+.form-control:focus {
+  background-color: #343a40;
+  border-color: #17a2b8;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.25);
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+} 
