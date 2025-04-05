@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Navbar from './Navbar';
 import Footer from './Footer';
 
 export default function Layout({ children, title = 'Elektron Lab', description = 'Soluciones Eléctricas y Tecnologías' }) {
@@ -24,6 +25,7 @@ export default function Layout({ children, title = 'Elektron Lab', description =
       </Head>
       
       <div className="d-flex flex-column min-vh-100">
+        <Navbar />
         <main className="flex-grow-1">
           {children}
         </main>

@@ -1,28 +1,32 @@
-import Navbar from "../components/Navbar";
-import Image from "next/image";
+import Image from 'next/image';
 
-export default function Proyectos() {
+export default function About() {
   return (
-    <>
-      <Navbar />
-      <div className="container mt-4">
-        <section className="about-section text-center">
-          <h1 className="display-4 mb-4">¡Hello world!</h1>
-          <p className="lead mb-4">
-            En <strong>Elektron Lab</strong>, nos especializamos en ofrecer soluciones profesionales en electricidad, electrónica y programación. Nuestro enfoque está en <strong>energía eléctrica AC/DC</strong> y en el uso de <strong>simuladores de software libre</strong> para facilitar el aprendizaje y desarrollo de proyectos innovadores.
+    <div className="container mt-4">
+      <h1>Acerca de Elektron Lab</h1>
+      <div className="row mt-4">
+        <div className="col-md-6">
+          <p>
+            Elektron Lab es una plataforma educativa dedicada a la enseñanza de electrónica y programación.
+            Nuestro objetivo es proporcionar recursos de alta calidad para estudiantes, aficionados y profesionales.
           </p>
-          
-          <div className="mt-5 mb-5">
-            <Image 
-              src="/elektronlabremote.png" 
-              alt="Elektron Lab Remote" 
-              width={800} 
-              height={450} 
-              className="img-fluid rounded shadow"
+          <p>
+            Ofrecemos laboratorios virtuales, tutoriales paso a paso y programas descargables para ayudarte
+            a aprender y experimentar con la electrónica y la programación.
+          </p>
+        </div>
+        <div className="col-md-6">
+          <div className="position-relative" style={{ height: '300px' }}>
+            <Image
+              src="/elektronlabremote.png"
+              alt="Equipo de Elektron Lab"
+              layout="fill"
+              objectFit="cover"
+              className="rounded"
             />
           </div>
-        </section>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
