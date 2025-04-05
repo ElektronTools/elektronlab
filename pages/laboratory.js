@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Laboratory() {
     return (
         <div className="container mt-4">
@@ -10,7 +12,7 @@ export default function Laboratory() {
                             <p className="card-text">
                                 Aprende a programar microcontroladores Arduino con nuestros tutoriales y proyectos prácticos.
                             </p>
-                            <a href="/modulo1" className="btn btn-primary">Comenzar</a>
+                            <Link href="/modulo1" className="btn btn-primary">Comenzar</Link>
                         </div>
                     </div>
                 </div>
@@ -21,7 +23,7 @@ export default function Laboratory() {
                             <p className="card-text">
                                 Explora circuitos electrónicos básicos y avanzados con nuestros simuladores y guías.
                             </p>
-                            <a href="/proteus" className="btn btn-primary">Explorar</a>
+                            <Link href="/proteus" className="btn btn-primary">Explorar</Link>
                         </div>
                     </div>
                 </div>
@@ -32,7 +34,7 @@ export default function Laboratory() {
                             <p className="card-text">
                                 Mejora tus habilidades de programación con nuestros ejercicios y proyectos.
                             </p>
-                            <a href="/programas" className="btn btn-primary">Descubrir</a>
+                            <Link href="/programas" className="btn btn-primary">Descubrir</Link>
                         </div>
                     </div>
                 </div>

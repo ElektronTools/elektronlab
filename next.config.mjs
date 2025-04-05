@@ -25,7 +25,6 @@ const nextConfig = {
       ];
     },
     // Optimizaciones para producción
-    swcMinify: true, // Usar SWC para minificación
     reactStrictMode: true, // Habilitar modo estricto de React
     poweredByHeader: false, // Ocultar el encabezado X-Powered-By
   };

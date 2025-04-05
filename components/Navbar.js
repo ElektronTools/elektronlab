@@ -1,5 +1,6 @@
 // components/Navbar.js
 
+import Image from 'next/image';
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -18,10 +19,12 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link href="/" className="navbar-brand d-flex align-items-center text-white">
-          <img
+          <Image
             src="/elektronlogo.ico"
             alt="Elektron Logo"
-            style={{ width: "50px", height: "50px", marginRight: "10px" }}
+            width={30}
+            height={30}
+            className="d-inline-block align-text-top me-2"
           />
           Elektron Lab
         </Link>
