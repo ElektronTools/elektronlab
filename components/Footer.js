@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTiktok, faWhatsapp, faYoutube, faFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons';
-import '../styles/Footer.css';
+import styles from '../styles/Footer.module.css';
 
 export default function Footer() {
   return (
@@ -15,7 +15,7 @@ export default function Footer() {
               <li className="me-3">
                 <a 
                   href="https://wa.me/59169717553" 
-                  className="text-light social-icon" 
+                  className={`text-light ${styles.socialIcon}`}
                   target="_blank" 
                   rel="noopener noreferrer"
                   title="WhatsApp"
@@ -26,7 +26,7 @@ export default function Footer() {
               <li className="me-3">
                 <a 
                   href="https://www.tiktok.com/@elektrontools?is_from_webapp=1&sender_device=pc" 
-                  className="text-light social-icon" 
+                  className={`text-light ${styles.socialIcon}`}
                   target="_blank" 
                   rel="noopener noreferrer"
                   title="TikTok"
@@ -37,7 +37,7 @@ export default function Footer() {
               <li className="me-3">
                 <a 
                   href="https://www.youtube.com/@ElektronTools123" 
-                  className="text-light social-icon" 
+                  className={`text-light ${styles.socialIcon}`}
                   target="_blank" 
                   rel="noopener noreferrer"
                   title="YouTube"
@@ -48,7 +48,7 @@ export default function Footer() {
               <li className="me-3">
                 <a 
                   href="https://www.facebook.com/profile.php?id=61557499266597&mibextid=ZbWKwL" 
-                  className="text-light social-icon" 
+                  className={`text-light ${styles.socialIcon}`}
                   target="_blank" 
                   rel="noopener noreferrer"
                   title="Facebook"
@@ -59,7 +59,7 @@ export default function Footer() {
               <li className="me-3">
                 <a 
                   href="https://t.me/electrontools" 
-                  className="text-light social-icon" 
+                  className={`text-light ${styles.socialIcon}`}
                   target="_blank" 
                   rel="noopener noreferrer"
                   title="Telegram"
