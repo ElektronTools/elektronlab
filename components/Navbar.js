@@ -15,7 +15,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link href="/" className="navbar-brand d-flex align-items-center text-white">
           <img
@@ -27,18 +27,19 @@ const Navbar = () => {
         </Link>
 
         <button
-          className="navbar-toggler"
+          className="navbar-toggler border-light"
           type="button"
           onClick={toggleNavbar}
           aria-controls="navbarNav"
           aria-expanded={isOpen ? "true" : "false"}
           aria-label="Toggle navigation"
+          style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
-          <ul className="navbar-nav ms-auto justify-content-center w-100">
+          <ul className="navbar-nav mx-auto text-center">
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle text-white"
@@ -50,7 +51,7 @@ const Navbar = () => {
               >
                 Arduino
               </a>
-              <ul className="dropdown-menu bg-dark" aria-labelledby="arduinoDropdown">
+              <ul className="dropdown-menu bg-dark text-center" aria-labelledby="arduinoDropdown">
                 <li>
                   <Link href="/modulo1" className="dropdown-item text-white">
                     Módulo 1: Introducción

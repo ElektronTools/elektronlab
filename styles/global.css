@@ -1,17 +1,33 @@
 /* styles/global.css */
 
+/* Estilos globales */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Estilos para el footer */
 footer {
-    background-color: #343a40; /* Fondo oscuro */
-    color: white; /* Texto blanco */
-    padding: 20px 0; /* Espaciado */
-  }
-  
-  footer a {
-    color: white; /* Enlaces blancos */
-  }
-  
-  footer a:hover {
-    text-decoration: underline; /* Subraya los enlaces al pasar el ratón */
-  }
+  margin-top: auto;
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+main {
+  flex: 1 0 auto;
+}
   
