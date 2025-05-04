@@ -26,7 +26,8 @@ const Navbar = () => {
             height={30}
             className="d-inline-block align-text-top me-2"
           />
-          Elektron Lab
+          Industrial Tech <br></br>
+          Solutions
         </Link>
 
         <button
@@ -43,7 +44,7 @@ const Navbar = () => {
 
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav mx-auto text-center">
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle text-white"
                 href="#"
@@ -57,35 +58,47 @@ const Navbar = () => {
               <ul className="dropdown-menu bg-dark text-center" aria-labelledby="arduinoDropdown">
                 <li>
                   <Link href="/modulo1" className="dropdown-item text-white">
-                    Módulo 1: Introducción
+                    Introducción
                   </Link>
                 </li>
                 <li>
                   <Link href="/modulo2" className="dropdown-item text-white">
-                    Módulo 2: Entradas Digitales
+                    Comunicación serial
                   </Link>
                 </li>
                 <li>
                   <Link href="/modulo3" className="dropdown-item text-white">
-                    Módulo 3: PWM y sensores
+                    Sensores
                   </Link>
                 </li>
-              </ul>
-            </li>
+                <li>
+                  <Link href="/modulo3" className="dropdown-item text-white">
+                    Motores
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/modulo3" className="dropdown-item text-white">
+                    ...
+                  </Link>
+                </li>
 
-            <li className="nav-item">
+
+              </ul>
+            </li> */}
+
+{/*             <li className="nav-item">
               <Link href="/laboratory" className="nav-link text-white">
                 Laboratorios
               </Link>
-            </li>
-            <li className="nav-item">
+            </li> */}
+{/*             <li className="nav-item">
               <Link href="/programas" className="nav-link text-white">
                 Descargas
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link href="/about" className="nav-link text-white">
-                ¿Qué es Elektron Lab?
+                ¿Quienes somos?
               </Link>
             </li>
           </ul>

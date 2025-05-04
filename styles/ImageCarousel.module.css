@@ -1,0 +1,45 @@
+.slideContainer {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px 10px;
+  text-align: center;
+  z-index: 10;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .image {
+    height: 300px;
+  }
+
+  .textOverlay {
+    font-size: 18px;
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    height: 250px;
+  }
+
+  .textOverlay {
+    font-size: 16px;
+    padding: 8px 5px;
+  }
+} 
