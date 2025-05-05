@@ -3,14 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
+  min-height: 8vh;
   margin: 0;
   padding: 1rem;
 }
 
 .neonText {
   font-family: 'Arial', sans-serif;
-  font-size: 4rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 0;
   animation: colorChange 1s infinite alternate;

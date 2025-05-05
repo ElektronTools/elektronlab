@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.css';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 import Layout from '../components/Layout';
 import { ErrorBoundary } from 'react-error-boundary';
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Layout>
         <Component {...pageProps} />
+        <WhatsAppButton />
       </Layout>
     </ErrorBoundary>
   );

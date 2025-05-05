@@ -1,0 +1,143 @@
+.whatsappButton {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.whatsappButton:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #128C7E, #25D366);
+}
+
+.whatsappButton:active {
+  transform: scale(0.95);
+}
+
+.whatsappButton:hover .bubble {
+  animation: bubbleFloat 2s infinite;
+}
+
+.bubble {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: bubbleFloat 3s infinite;
+}
+
+.bubble:nth-child(1) {
+  width: 20px;
+  height: 20px;
+  left: 10%;
+  top: 20%;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+  width: 15px;
+  height: 15px;
+  right: 15%;
+  top: 40%;
+  animation-delay: 0.5s;
+}
+
+.bubble:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  left: 20%;
+  bottom: 20%;
+  animation-delay: 1s;
+}
+
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.2;
+  }
+}
+
+.whatsappIcon {
+  color: white;
+  font-size: 2.2rem;
+  animation: iconPulse 2s infinite;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.whatsappButton:hover .whatsappIcon {
+  transform: rotate(10deg);
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Efecto de brillo */
+.whatsappButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), transparent 60%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.whatsappButton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.1), transparent 60%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .whatsappButton {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .whatsappIcon {
+    font-size: 2rem;
+  }
+
+  .bubble {
+    display: none;
+  }
+} 

@@ -34,7 +34,7 @@ export default function Footer() {
                   <FontAwesomeIcon icon={faTiktok} size="2x" />
                 </a>
               </li>
-              <li className="me-3">
+{/*               <li className="me-3">a
                 <a 
                   href="https://www.youtube.com/@ElektronTools123" 
                   className={`text-light ${styles.socialIcon}`}
@@ -44,7 +44,7 @@ export default function Footer() {
                 >
                   <FontAwesomeIcon icon={faYoutube} size="2x" />
                 </a>
-              </li>
+              </li> */}
               <li className="me-3">
                 <a 
                   href="https://www.facebook.com/profile.php?id=61557499266597&mibextid=ZbWKwL" 

@@ -1,8 +1,12 @@
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 export default function Layout({ children, title = 'Elektron Lab', description = 'Soluciones Eléctricas y Tecnologías' }) {
+  const router = useRouter();
+  const showFooter = router.pathname === '/quienes-somos';
+
   return (
     <>
       <Head>
@@ -29,7 +33,7 @@ export default function Layout({ children, title = 'Elektron Lab', description =
         <main className="flex-grow-1">
           {children}
         </main>
-        <Footer />
+        {showFooter && <Footer />}
       </div>
     </>
   );
