@@ -13,9 +13,6 @@ const ImageCarousel = ({ slides }) => {
     >
       {slides.map((slide, index) => (
         <div key={index} className={styles.slideContainer}>
-          <div className={styles.textOverlay}>
-            <p>{slide.text}</p>
-          </div>
           <img src={slide.image} alt={`Slide ${index}`} className={styles.image} />
         </div>
       ))}

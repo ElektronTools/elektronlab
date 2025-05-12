@@ -1,45 +1,39 @@
 .slideContainer {
   position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
 }
 
 .image {
   width: 100%;
-  height: 550px;
+  height: 250%;
   object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.textOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #fff;
-  font-size: 22px;
-  font-weight: bold;
-  padding: 20px 10px;
-  text-align: center;
-  z-index: 10;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+@media (max-width: 1600px) {
+  .slideContainer {
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slideContainer {
+    max-width: 1000px;
+  }
 }
 
 @media (max-width: 768px) {
-  .image {
-    height: 300px;
-  }
-
-  .textOverlay {
-    font-size: 18px;
-    padding: 10px 5px;
+  .slideContainer {
+    max-width: 700px;
   }
 }
 
 @media (max-width: 480px) {
-  .image {
-    height: 250px;
+  .slideContainer {
+    max-width: 400px;
   }
-
-  .textOverlay {
-    font-size: 16px;
-    padding: 8px 5px;
-  }
-} 
+}

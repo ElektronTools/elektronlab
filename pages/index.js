@@ -6,16 +6,20 @@ import { useRouter } from 'next/router';
 
 const slides = [
   {
-    image: '/elektronlabremote.png',
-    text: 'Bienvenido a Elektron Lab - Tu laboratorio virtual de electrónica'
+    image: '/image1.jpg',
+    text: '✔️ Instalaciones Eléctricas Domiciliarias, Comerciales e Industriales'
+  },
+  {
+    image: '/image2.jpg',
+    text: '✔️ Reparación y mantenimiento de Sistemas de Seguridad'
+  },
+  {
+    image: '/image3.png',
+    text: '✔️ Motores y Tableros Eléctricos'
   },
   {
     image: '/elektronlabremote.png',
-    text: 'Aprende Arduino, electrónica y programación con nosotros'
-  },
-  {
-    image: '/elektronlabremote.png',
-    text: 'Explora nuestros laboratorios y recursos educativos'
+    text: '✔️ Diseño de planos eléctricos'
   }
 ];
 
@@ -25,24 +29,38 @@ export default function Home() {
 
   return (
     <div>
-      <div className="container mt-4">
-        <h1>Bienvenido a Elektron Lab</h1>
-        <p>Explora laboratorios, descarga programas y descubre más sobre nosotros.</p>
+      <div className="container mt-10 space-y-6 text-center">
+        <h2 className="text-4xl font-bold text-blue-700 mb-4">Soluciones electricas y tecnologías</h2>
+        <br></br>
+        <br></br>
+        <div className="bg-gray-100 p-6 rounded-lg shadow-md mx-auto max-w-3xl">
+          <p className="text-lg text-gray-800 leading-relaxed">
+            ✔️ Instalaciones Eléctricas: Domiciliarias, Comerciales e Industriales <br />
+            - Tableros Eléctricos <br />
+            - Entubado de loza y cableado<br />
+            - Iluminación, Leds <br />
+            - Tomas de corriente <br />
+            - Conmutadores <br />
+            - Duchas eléctricas <br />
+
+            ✔️ Instalación, reparación y mantenimiento de sistemas de seguridad. <br />
+            - Cámaras con acceso remoto <br />
+            - Intercomunicadores <br />
+            - Video portero <br />
+            - chapas eléctricas <br />
+            - sensores de movimiento <br />
+            ✔️ Diseño de planos eléctricos NB777. <br /><br />
+            🎯 Atención rápida y garantizada <br />
+            🚨 Emergencias 24/7 <br />
+            💡 Precios económicos <br />
+            📍 La Paz, El Alto - Bolivia <br />
+            📞 ¡Contáctanos y solucionaremos tus problemas eléctricos al instante!
+          </p>
+        </div>
       </div>
 
       <ImageCarousel slides={slides} />
       <NeonSign />
-
-      <div className="container mt-5">
-        <h1>Servicios</h1>
-        <ul>
-          <li>Instalaciones eléctricas domiciliarias e industriales.</li>
-          <li>Instalación, mantenimiento y reparación de sistemas de seguridad.</li>
-          <li>Diseño de planos eléctricos.</li>
-          <li>Tableros eléctricos.</li>
-          <li>Puesta a tierra y protección contra descargas.</li>
-        </ul>
-      </div>
     </div>
   );
 }

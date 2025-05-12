@@ -10,7 +10,6 @@ export default function Footer() {
         <div className="row">
           {/* Sección de redes sociales */}
           <div className="col-12 text-center">
-            <h6 className="mb-0 text-white-50">Síguenos en nuestras redes</h6>
             <ul className="list-unstyled d-flex justify-content-center align-items-center mt-1">
               <li className="me-3">
                 <a 
