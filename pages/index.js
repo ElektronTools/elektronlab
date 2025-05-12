@@ -12,15 +12,15 @@ const slides = [
   {
     image: '/image2.jpg',
     text: '✔️ Reparación y mantenimiento de Sistemas de Seguridad'
-  },
+  }/* ,
   {
-    image: '/image3.png',
+    image: '/image3.jpg',
     text: '✔️ Motores y Tableros Eléctricos'
   },
   {
     image: '/elektronlabremote.png',
     text: '✔️ Diseño de planos eléctricos'
-  }
+  } */
 ];
 
 export default function Home() {
@@ -35,24 +35,22 @@ export default function Home() {
         <br></br>
         <div className="bg-gray-100 p-6 rounded-lg shadow-md mx-auto max-w-3xl">
           <p className="text-lg text-gray-800 leading-relaxed">
-            ✔️ Instalaciones Eléctricas: Domiciliarias, Comerciales e Industriales <br />
+            ✔️ Instalaciones Eléctricas: Domiciliarias, Comerciales e Industriales. <br />
             - Tableros Eléctricos <br />
             - Entubado de loza y cableado<br />
             - Iluminación, Leds <br />
-            - Tomas de corriente <br />
-            - Conmutadores <br />
+            - Tomas de corriente y Conmutadores <br />
             - Duchas eléctricas <br />
 
             ✔️ Instalación, reparación y mantenimiento de sistemas de seguridad. <br />
-            - Cámaras con acceso remoto <br />
-            - Intercomunicadores <br />
-            - Video portero <br />
+            - Cámaras de videovigilancia con acceso remoto <br />
+            - Intercomunicadores y video porteros <br />
             - chapas eléctricas <br />
             - sensores de movimiento <br />
             ✔️ Diseño de planos eléctricos NB777. <br /><br />
             🎯 Atención rápida y garantizada <br />
             🚨 Emergencias 24/7 <br />
-            💡 Precios económicos <br />
+            💡 Soluciones efectivas a precios accesibles <br />
             📍 La Paz, El Alto - Bolivia <br />
             📞 ¡Contáctanos y solucionaremos tus problemas eléctricos al instante!
           </p>

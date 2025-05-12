@@ -1,39 +1,51 @@
+/* Configuración base del contenedor */
 .slideContainer {
   position: relative;
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
-  aspect-ratio: 16/9;
 }
 
-.image {
-  width: 100%;
-  height: 250%;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 1600px) {
+/* Configuración para escritorio */
+@media (min-width: 801px) {
   .slideContainer {
-    max-width: 1400px;
+    max-width: 300px;
+    aspect-ratio: 16/9;
+  }
+
+  .image {
+    width: 100%;
+    height: 300%;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 }
 
-@media (max-width: 1024px) {
+/* Configuración para móvil */
+@media (max-width: 80px) {
   .slideContainer {
-    max-width: 1000px;
+    max-width: 100%;
+    aspect-ratio: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
   }
 }
 
-@media (max-width: 768px) {
-  .slideContainer {
-    max-width: 700px;
-  }
-}
-
+/* Configuración para móvil pequeño */
 @media (max-width: 480px) {
   .slideContainer {
-    max-width: 400px;
+    max-width: 100%;
+  }
+
+  .image {
+    height: 300px;
   }
 }
