@@ -12,15 +12,15 @@ const slides = [
   {
     image: '/image2.jpg',
     text: '✔️ Reparación y mantenimiento de Sistemas de Seguridad'
-  }/* ,
+  } ,
   {
     image: '/image3.jpg',
     text: '✔️ Motores y Tableros Eléctricos'
-  },
+  }/* ,
   {
     image: '/elektronlabremote.png',
     text: '✔️ Diseño de planos eléctricos'
-  } */
+  }  */
 ];
 
 export default function Home() {
