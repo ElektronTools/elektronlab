@@ -5,7 +5,7 @@ import styles from '../styles/WhatsAppButton.module.css';
 
 const WhatsAppButton = () => {
   const phoneNumber = '59177894875';
-  const message = 'Hola, me gustaría obtener más información sobre Elektron Lab';
+  const message = '¡Hola! Podrías darme más información de...';
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

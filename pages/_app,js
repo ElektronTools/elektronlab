@@ -1,6 +1,6 @@
 // pages/_app.js
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importa Bootstrap
-import 'bootswatch/dist/Lux/bootstrap.min.css'; // Tema de Bootswatch
+import 'bootswatch/dist/Solar/bootstrap.min.css'; // Tema de Bootswatch
 import '../styles/global.css'; // Si tienes estilos personalizados
 
 import Footer from '../components/Footer'; // Importa el footer
