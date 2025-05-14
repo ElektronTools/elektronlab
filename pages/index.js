@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div>
       <div className="container mt-10 space-y-6 text-center">
-        <h2 className="text-4xl font-bold text-blue-700 mb-4">Soluciones electricas y tecnologías</h2>
+        <h2 className="text-4xl font-bold text-blue-700 mb-4">Soluciones eléctricas y tecnologías</h2>
         <br></br>
         <br></br>
         <div className="bg-gray-100 p-6 rounded-lg shadow-md mx-auto max-w-3xl">
